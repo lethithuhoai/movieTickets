@@ -1,0 +1,40 @@
+.Chair {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.booking {
+        background-color: rgb(102, 255, 0);
+        border: transparent;
+        color: white;
+    }
+
+    &.booked {
+        background-color: rgb(235, 149, 21);
+        color: white;
+        border: transparent;
+        pointer-events: none;
+    }
+
+    &.disabled {
+        border: transparent;
+        pointer-events: none;
+    }
+}
+
+.screen {
+    background-color: rgb(235, 149, 21);
+}
+
+// bg-dark 
